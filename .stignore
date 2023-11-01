@@ -1,0 +1,5 @@
+# Ignore everything
+*
+
+# Ignore git folder 
+.git

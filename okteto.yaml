@@ -1,0 +1,16 @@
+build:
+  next:
+    context: .
+
+dev:
+  next:
+    image: $OKTETO_BUILD_NEXT_IMAGE
+    autocreate: true
+    workdir: /usr/src/app
+    command: bash
+    resources:
+      requests:
+        cpu: "250m"
+        memory: "64Mi"
+    forward:
+    - 3000:3000
